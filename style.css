@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+ font-family: Roboto, sans-serif;
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+h1{font-size: 40px;text-transform: uppercase;}
+h2,caption{font-size: 20px;font-weight: bold;text-align: center;
+  text-transform:uppercase;
+  margin: 20px auto;
+}
+
+.grey-bg{background: grey;}
+.lightgrey-bg{background: #c7c77459;}
+.red-bg{background: #ff0000bd;}
+.green-bg{background: #008000bf;}
+.purple-bg{background: #800080b5;}
+.yellow-bg{background: yellow;}
+.lightyellow1-bg{background: #ffff0059;}
+.white-bg{background: #fff;}
+.indigo-bg{background: indigo;}
+.blue1-bg{background: #03a9f4;}
+.blue2-bg{background: #00bcd4;}
+.lightblue1-bg{background:#03a9f45c;}
+.lightblue2-bg{background: #00bcd44f;}
+.orange-bg{background:  #fda500;}
+div.line{
+  width: 20%;
+  margin: 0 auto;
+  height:5px;
+  background: #fda500;
+  margin-bottom: 30px;
+}
+header  {
+  padding: 0.5rem 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2F2F2;
+}
+header .logo {
+  margin-left: 50px;
+  display: inline;
+}
+header nav {
+  background: #fda500;
+  padding: 0.5rem 2.5rem;
+  clip-path: polygon(7% 0%,93% 0%,100% 120%,0% 120%);
+
+}
+header nav ul {
+  display: inline;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style:none;
+}
+header nav ul a.icon{ display: none;}
+header nav ul a {
+  box-shadow: 2px 2px 2px #000;
+  padding: 0.4rem 0.7rem;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  border: 1px solid #fda500;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+header nav ul a.active {
+  box-shadow: 2px 2px 2px #fff;
+
+}
+header nav ul a:hover {
+  border: 1px solid #000;
+  background: floralwhite;
+  color: #000000b5;
+}
+section{
+  min-height:85vh;
+  padding: 50px 0;
+}
+section .paragraphe{
+  width: 80%;
+  margin: 0 auto;
+}
+section .paragraphe strong{
+  color: #fda500;
+}
+section .paragraphe a{
+  text-decoration: none;
+}
+section .paragraphe b{
+  font-size: 25px;
+  color: #fda500;
+}
+
+section#hero-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  background:  url(https://cdn.pixabay.com/photo/2016/04/01/11/05/architecture-1300184__340.png) no-repeat;
+  
+  background-attachment: fixed;
+  animation: bienvenue 1s  ease-in-out ;
+  background-size: 100% 100%;
+}
+section#hero-section h1 {
+  animation: titre 4s  ease-in-out ;
+  margin: 0 auto;
+  color: #fda500;
+}
+
+.royal-family-box{
+  width: 70%;
+  margin: 20px auto;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  animation: bienvenue 1s  ease-in-out ;
+
+}
+.royal-family-box div{
+  overflow: auto;
+  text-align: center;
+  width: 25%;
+  box-shadow: 0 1px 1px rgb(255,255, 255, 0.5);
+  border-radius:4px;
+  padding: 5px;
+}
+.royal-family-box img {
+  border: 0.5px solid orange;
+  padding: 5px;
+  width: 100%;
+  height: 300px;
+}
+.royal-family-box p {
+  font-size: 14px;
+  color: #777777;
+}
+.royal-family-box div p.name{
+  margin: 0.4rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  transition: 0.4s;
+}
+.royal-family-box div p.name:hover{color: orange;}
+.royal-family-box h2 {
+  margin: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-bottom: 4px solid orange;
+}
+section#assets{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: minmax(100px,auto) ;
+  grid-gap: 30px;
+  grid-auto-flow: dense;
+
+}
+table{
+  animation: bienvenue 1s  ease-in-out ;
+  border-collapse: collapse;
+  font-size: 15px;
+
+}
+table:nth-child(1){grid-column: span 2;}
+table:nth-child(2){grid-column: span 1;}
+table:nth-child(3){grid-column: span 1;}
+
+table caption{margin: 50px auto;font-size: 1.5rem;}
+table th{padding: 0.5rem;}
+table  td{padding: 1rem;}
+table .col1 td{background: #ddccaa96;}
+table .col2 td{background: #dca;}
+section#contact{
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.56);
+  background-size: 100% 100%;
+  text-align: center;
+  border:4px dashed orange;
+  width: 60%;
+  margin: 20px auto;
+  animation: bienvenue 1s  ease-in-out ;
+}
+section#contact div{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+section#contact textarea:focus,section#contact input:focus{
+  border:1px solid orange;
+}
+section#contact label{
+  font-weight: bolder;
+}
+section#contact a:hover{
+  background: grey;
+  color: orange;
+}
+section#contact a{
+  text-decoration: none;
+  width: 100%;
+  padding: 0.4rem;
+  color: #000;
+  background: orange;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+section#contact input{
+
+  border:1px solid grey;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+textarea{
+  height: 100px;
+  border:1px solid grey;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.popup{
+  padding: 30px;
+  position: absolute;
+  z-index: 100;
+  width: 30%;
+  left: 50%;
+  background: #dadada;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  border:0.5px solid #000;
+  box-shadow: 1px 1px 1px #000;
+  display: none;
+  transition-delay: 0.4s;
+  transition-duration: 0.4s;
+  z-index: 101;
+}
+
+.popup-content{
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+
+.popup a{
+  text-decoration: none;
+  background: orange;
+  padding: 10px 15px;
+  color: #000;
+  border-radius: 4px #000;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border-radius: 50%;
+}
+.popup p{
+  margin-bottom: 30px;
+}
+.blur-bg{
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: 100;
+  filter: blur(10px);
+  display: none;
+  background:rgba(255, 255, 255, 0.68);;
+
+}
+@keyframes bienvenue{
+  from{
+    opacity: 0.1;
+  }
+  to{
+    opacity: 1;
+  }
+  }@keyframes titre{
+    from{
+      opacity: 0.1;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 780px){
+    header .logo {
+      margin-left: 30px;
+      display: inline;
+    }
+    header nav {
+
+      padding: 0.5rem 1rem;
+      clip-path: polygon(4% 0%,96% 0%,100% 100%,0% 100%);
+    }
+    header nav ul a {
+      padding: 0.2rem ;
+      font-size: 12.5px;
+    }
+    section#assets{
+      grid-template-columns: 100%;
+    }
+    table{
+      grid-row: unset !important;
+      grid-column:  unset !important;
+    }
+
+
+  }
+  @media screen and (max-width: 600px){
+    header  {
+      display: block;
+      padding: 0 ;
+      height:auto;
+      overflow: visible;
+    }
+    h2{font-size: 1rem;text-align: center;}
+    header nav{
+      margin: 0;
+      width: 100%;
+      clip-path: polygon(5% 0%,95% 0%,100% 100%,0% 100%);
+      padding: 0.5rem 0.8rem;
+    }
+    header nav ul{width: 100; display: flex;justify-content: space-around;}
+    header nav ul a {
+      padding: 0.2rem ;
+      font-size: 10px;
+    }
+    section{width: 100%;height:auto;}
+    section#hero-section{
+      width: 100%;
+      height:60vh;
+      background-size:100% 100%;
+    }
+    .royal-family-box {
+      flex-direction: column;
+    }
+    .royal-family-box div{
+      width: 100%;
+      grid-row: span 1;
+      text-align: center;
+    }
+    .royal-family-box p {
+      font-size: 12px;
+    }
+
+    section#contact{
+      width: 100%;
+    }
+    section#contact div{
+      width: 80%;
+
+    }
+    .popup{
+      width: 40%;
+    }
+    .popup p{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 400px){
+    header {padding: 0;position: relative;}
+    header nav {position: absolute;top: 100%;
+      z-index: 100;
+      background: none;
+      padding: 0;
+      clip-path: none;}
+      header nav ul{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      header nav ul a:not(.icon){
+        display: none;
+        background: orange;
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+
+      }
+      header nav ul a.icon{
+        font-size: 15px;
+        float: right;
+        transform: translate(-50%,-200%);
+        display:block;
+        background: orange;}
+        header nav ul.responsive{position: relative;}
+        header nav ul.responsive a.icon{
+
+          position: absolute;right:0%;top:0;}
+          header nav ul.responsive a{float: none;
+            display: block;
+            text-align: center;
+          }
+          section#contact div{
+            align-items: flex-start;
+          }
+          section#contact a{
+            font-size: 14px;
+          }
+          section#contact label{
+            font-weight: bolder;
+            font-size: 11px;
+            padding: 5px;
+          }
+          section#contact input,section#contact textarea{
+            padding: 5px;
+          }
+          .popup{
+            width: 50%;
+          }
+          .popup p{
+            font-size: 10px;
+          }
+        }
+
+
+/*
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.4rem;
+  width: 4rem;
+  background: rgb(0, 0, 0);
+  color: gold;
+  font-size: 1rem;
+}
+
+.main-editor {
+  background: rgba(230, 230, 230, 0.295);
+  display: flex;
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+}
+
+.first {
+  background-color: #ffffff;
+  width: 50%;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  outline: none;
+  padding: 0.4rem;
+  height: 100%;
+}
+
+.second {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  overflow-y: auto;
+  white-space: pre;
+  right: 0;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  padding: 0.4rem;
+  height: 100%;
+}
+*/

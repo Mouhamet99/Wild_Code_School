@@ -1,0 +1,22 @@
+{
+  "name": "html-code-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "grunt-jsvalidate": "0.2.2",
+    "gulp-jsvalidate": "5.0.0",
+    "https-browserify": "1.0.0",
+    "js-tokens": "6.0.0",
+    "parcel": "1.9.7",
+    "serialize-javascript": "5.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
